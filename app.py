@@ -24,11 +24,11 @@ TITLE_FONT_SIZE = Pt(30)
 SLIDE_FONT_SIZE = Pt(16)
 
 # Define custom formatting options for PDF Chat
-PDF_CHAT_TITLE = "Chat with babaji💬"
+PDF_CHAT_TITLE = "Chat with PDF💬"
 
 # Sidebar contents
 with st.sidebar:
-    st.title('🤗💬 babaji App by Boyanmol')
+    st.title('🤗💬 AI PPT AND PDF Webapp')
     st.markdown('''
     ## About
     This app is powered by:
@@ -38,10 +38,10 @@ with st.sidebar:
  
     ''')
     add_vertical_space(5)
-    st.write('Made with ❤️ by [boyanmol](https://youtube.com/@boyaanmol)')
+    st.write('Made with by anmol and ramesh](https://youtube.com/@boyaanmol)')
 
 def generate_slide_titles(topic):
-    prompt = f"Generate 5 slide titles for the topic '{topic}'."
+    prompt = f"Generate 10 slide titles for the topic '{topic}'."
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
